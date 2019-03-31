@@ -1,0 +1,33 @@
+name:                persist-seq
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/calimakvo/persist-seq
+license:             BSD3
+author:              karky7
+maintainer:          cantimerny.g@gmail.com
+copyright:           2019 Author karky7
+category:            command
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - text
+  - time
+  - persistent
+  - persistent-postgresql
+  - persistent-template
+  - template-haskell
+  - cassava
+  - bytestring
+  - vector
+  - monad-control
+  - monad-logger
+  - resourcet
+  - mtl
+  
+executables:
+  persist-seq:
+    source-dirs:      src
+    main:             Main.hs

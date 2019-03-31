@@ -1,0 +1,43 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f01b064f555c197aec2b5379d4e8b0622959a46c8cdf2855f925b1076cf9349e
+
+name:           persist-seq
+version:        0.1.0.0
+category:       command
+homepage:       https://github.com/calimakvo/persist-seq
+author:         karky7
+maintainer:     cantimerny.g@gmail.com
+copyright:      2019 Author karky7
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable persist-seq
+  main-is: Main.hs
+  other-modules:
+      Paths_persist_seq
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cassava
+    , monad-control
+    , monad-logger
+    , mtl
+    , persistent
+    , persistent-postgresql
+    , persistent-template
+    , resourcet
+    , template-haskell
+    , text
+    , time
+    , vector
+  default-language: Haskell2010
